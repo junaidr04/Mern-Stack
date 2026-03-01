@@ -34,4 +34,4 @@ This repository contains my frontend projects built using HTML, CSS, and JavaScr
 
 ## 👨‍💻 Author
 
-**Your Name**
+**JUNAID BIN JAHANGIR**
