@@ -4,428 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junaid Bin Jahangir | CSE Portfolio</title>
+    <title>Junaid Bin Jahangir | Portfolio</title>
+
+    <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">Junaid<span>.portfolio</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
 
-            <!-- Theme Toggle Button -->
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </button>
+    <!-- 1. Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <!-- Hero Photo (Optional - Large Circle) -->
+            <div class="profile-container"></div>
 
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+            <h1>Junaid Bin Jahangir</h1>
+            <div class="title">Software Engineering Student | DSA Enthusiast | Future Google SWE</div>
+            <p class="tagline">Building scalable solutions using C++ & Web Technologies.</p>
+
+            <div class="hero-buttons">
+                <a href="#resume" class="btn btn-primary"><i class="fas fa-file-alt"></i> View Resume</a>
+                <a href="#projects" class="btn btn-outline">View Projects</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/junaidr04" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- 2. About Me (With Passport Photo) -->
+    <section id="about">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hello, I'm <span class="highlight">Junaid Bin Jahangir</span></h1>
-                    <h2>Computer Science & Engineering Student</h2>
-                    <p>BSc in CSE at International Islamic University Chittagong</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <div class="image-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="#about" class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-    </section>
+            <h2>About Me</h2>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <!-- NEW: Flex container for Photo + Text -->
             <div class="about-content">
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
+                <div class="passport-photo-wrapper">
+                    <!-- ✨ PASSPORT SIZE PHOTO HERE -->
+                    <img src="passport-photo.jpg" alt="Junaid Passport Photo" class="passport-img">
                 </div>
+
                 <div class="about-text">
-                    <h3>Who I Am</h3>
-                    <p>I'm a passionate Computer Science & Engineering student at International Islamic University
-                        Chittagong, driven by curiosity and a desire to create innovative solutions through technology.
-                        My journey in programming began with a fascination for problem-solving, and I've since expanded
-                        my expertise across multiple domains.</p>
-                    <p>I specialize in building efficient algorithms, designing robust systems, and creating interactive
-                        web experiences. My technical foundation includes Data Structures and Algorithms, multiple
-                        programming languages, database management, and system design principles.</p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <span class="label">Name:</span>
-                            <span class="value">Junaid Bin Jahangir</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Email:</span>
-                            <span class="value">junaid@example.com</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">University:</span>
-                            <span class="value">IIUC</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Degree:</span>
-                            <span class="value">BSc in CSE</span>
-                        </div>
-                    </div>
+                    <p>
+                        I am a Software Engineering student passionate about solving complex problems through efficient
+                        code.
+                        Currently focusing on <strong>Data Structures & Algorithms (DSA)</strong> with C++, I am
+                        building a strong foundation in computer science fundamentals.
+                        My interests lie in building scalable backend systems and exploring Artificial Intelligence.
+                        My goal is to become a Software Engineer at Google, contributing to products that impact
+                        millions of users.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- 3. Skills Section -->
+    <section id="skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>Data Structures & Algorithms</h3>
-                    <p>Proficient in designing and implementing efficient algorithms for complex problems.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 90%"></div>
+                <!-- Languages -->
+                <div class="skill-card glass-card">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python (Basic)</span>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div> <!-- Changed icon for C++ -->
-                    <h3>C++ Programming</h3>
-                    <p>Strong foundation in C++ with experience in OOP, STL, and competitive programming.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 85%"></div>
+
+                <!-- Web Dev -->
+                <div class="skill-card glass-card">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">React (Learning)</span>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                    <h3>HTML & CSS</h3>
-                    <p>Expertise in creating semantic, responsive, and accessible web pages.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 95%"></div>
+
+                <!-- CS Fundamentals -->
+                <div class="skill-card glass-card">
+                    <h3><i class="fas fa-brain"></i> CS Fundamentals</h3>
+                    <div class="skill-tags">
+                        <span class="tag">DSA</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">DBMS</span>
+                        <span class="tag">OS</span>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-js"></i></div>
-                    <h3>JavaScript</h3>
-                    <p>Skilled in vanilla JavaScript and modern frameworks.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>C Programming</h3>
-                    <p>Solid understanding of C programming fundamentals and memory management.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>DBMS</h3>
-                    <p>Knowledge of database design, SQL, and normalization.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
-                    <h3>System Design</h3>
-                    <p>Understanding of system architecture and scalability principles.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Web Development</h3>
-                    <p>Full stack development capabilities with focus on front-end technologies.</p>
-                    <div class="skill-level">
-                        <div class="progress-bar" style="--progress: 85%"></div>
+
+                <!-- Tools -->
+                <div class="skill-card glass-card">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Linux</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- 4. Projects Section -->
+    <section id="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder"><i class="fas fa-project-diagram"></i></div>
-                    </div>
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
                     <div class="project-content">
-                        <h3>Algorithm Visualizer</h3>
-                        <p>An interactive web application that visualizes various sorting and searching algorithms.</p>
+                        <h3>DSA Solutions Repository</h3>
+                        <p>A collection of solved Data Structures and Algorithms problems implemented in C++.</p>
                         <div class="project-tech">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            <span>C++</span> <span>Algorithms</span> <span>STL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/junaidr04" target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder"><i class="fas fa-users-cog"></i></div>
-                    </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
                     <div class="project-content">
-                        <h3>Student Management System</h3>
-                        <p>A comprehensive database-driven application for managing student records.</p>
+                        <h3>Portfolio Website</h3>
+                        <p>My personal portfolio website built with modern HTML, CSS, and JavaScript.</p>
                         <div class="project-tech">
-                            <span>C++</span><span>SQL</span><span>DBMS</span>
+                            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/junaidr04" target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder"><i class="fas fa-id-card"></i></div>
-                    </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
                     <div class="project-content">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>A modern, responsive personal portfolio website showcasing skills and projects.</p>
+                        <h3>Web Dev Experiments</h3>
+                        <p>Various mini-projects and experiments while learning web technologies.</p>
                         <div class="project-tech">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
+                            <span>CSS</span> <span>JS</span> <span>React</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/junaidr04?tab=repositories" target="_blank"><i
+                                    class="fab fa-github"></i> View All Repos</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder"><i class="fas fa-code-branch"></i></div>
-                    </div>
-                    <div class="project-content">
-                        <h3>DSA Practice Platform</h3>
-                        <p>A coding practice platform with curated DSA problems and solutions.</p>
-                        <div class="project-tech">
-                            <span>C++</span><span>Data Structures</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div>
-                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Experience / Learning Journey -->
+    <section id="experience">
+        <div class="container glass-card" style="padding: 40px;">
+            <h2>Learning Journey</h2>
+            <p>Since I am currently a student focusing on skill acquisition, here is my learning roadmap:</p>
+            <br>
+            <ul>
+                <li><strong>DSA Mastery:</strong> Solving 200+ problems on LeetCode & GeeksforGeeks using C++.</li>
+                <li><strong>Full Stack Development:</strong> Currently learning the MERN Stack (MongoDB, Express, React,
+                    Node.js).</li>
+                <li><strong>Competitive Programming:</strong> Regular participant in online coding contests to improve
+                    speed and accuracy.</li>
+                <li><strong>Computer Science Core:</strong> Deep diving into Operating Systems and Computer Networks.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 6. Achievements -->
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements & Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item glass-card">
+                    <strong>Data Structures Course</strong>
+                    <p style="font-size: 0.9rem; color: #666; margin-top:5px;">GeeksforGeeks</p>
+                </div>
+                <div class="cert-item glass-card">
+                    <strong>Responsive Web Design</strong>
+                    <p style="font-size: 0.9rem; color: #666; margin-top:5px;">freeCodeCamp</p>
+                </div>
+                <div class="cert-item glass-card">
+                    <strong>Hackathon Participant</strong>
+                    <p style="font-size: 0.9rem; color: #666; margin-top:5px;">Local Tech Event 2025</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- 7. GitHub Stats -->
+    <section id="github">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - Present</span>
-                        <h3>Bachelor of Science in Computer Science and Engineering</h3>
-                        <p class="institution">International Islamic University Chittagong (IIUC)</p>
-                        <p class="description">Currently pursuing BSc in CSE with focus on algorithms, system design, mern stack.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2022</span>
-                        <h3>Higher Secondary Certificate (HSC)</h3>
-                        <p class="institution">Science Background</p>
-                        <p class="description">Completed HSC with focus on Mathematics, Physics, and Chemistry.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2020</span>
-                        <h3>Secondary School Certificate (SSC)</h3>
-                        <p class="institution">Science Background</p>
-                        <p class="description">Completed SSC with excellent academic performance.</p>
-                    </div>
-                </div>
+            <h2>GitHub Activity</h2>
+            <div class="github-stats-container glass-card">
+                <img src="https://github-readme-stats.vercel.app/api?username=junaidr04&show_icons=true&theme=default"
+                    alt="GitHub Stats">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=junaidr04&layout=compact"
+                    alt="Top Languages">
+            </div>
+            <p style="text-align: center; margin-top: 15px; font-size: 0.9rem;">Consistency is key. I push code
+                regularly.</p>
+        </div>
+    </section>
+
+    <!-- 8. Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Interested in a detailed overview of my qualifications?</p>
+            <br>
+            <a href="link-to-your-resume.pdf" target="_blank" class="btn btn-primary"
+                style="padding: 15px 40px; font-size: 1.1rem;">
+                <i class="fas fa-download"></i> Download Resume (PDF)
+            </a>
+        </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p style="opacity: 0.8;">I am currently open to internship opportunities.</p>
+            <div class="contact-info" style="margin-top: 20px;">
+                <span><i class="fas fa-envelope"></i> junaid@example.com</span>
+                <span><a href="https://github.com/junaidr04" style="color:white"><i class="fab fa-github"></i>
+                        junaidr04</a></span>
+                <span><i class="fas fa-map-marker-alt"></i> Chattogram, Bangladesh</span>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- 10. Footer -->
+    <footer>
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Talk</h3>
-                    <p>I'm currently available for freelance work and opportunities.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>jbj.jawad@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+880 XXX-XXXXXX</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Chittagong, Bangladesh</span>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Junaid Bin Jahangir. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+            <p id="footer-text">© 2026 Junaid Bin Jahangir — Built with ❤️ using HTML, CSS & JavaScript</p>
         </div>
     </footer>
 
-    <!-- Scroll to top button -->
-    <a href="#home" class="scroll-top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-
-    <script>
-        // Hamburger menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-            hamburger.classList.toggle('active');
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                    // Close mobile menu on click
-                    if (navLinks.classList.contains('open')) {
-                        navLinks.classList.remove('open');
-                        hamburger.classList.remove('active');
-                    }
-                }
-            });
-        });
-
-        // Contact form submission (demo)
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                alert("Thank you! Your message has been sent.");
-                contactForm.reset();
-            });
-        }
-
-        // ==========================================
-        // Dark Mode Toggle Logic
-        // ==========================================
-        const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement; // Selects <html>
-
-        const setTheme = (theme) => {
-            if (theme === 'dark') {
-                htmlElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                htmlElement.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'light');
-            }
-        };
-
-        // Check saved theme or system preference
-        const savedTheme = localStorage.getItem('theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if (savedTheme) {
-            setTheme(savedTheme);
-        } else if (systemPrefersDark) {
-            setTheme('dark');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-        });
-    </script>
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
 </body>
 
 </html>
