@@ -10,7 +10,7 @@ This repository contains my frontend projects built using HTML, CSS, and JavaScr
 👉 Live Demo: https://stalwart-palmier-e7c5ba.netlify.app/
 
 ### 🔹 Void Studio Website
-👉 Live Demo: https://regal-scone-14380e.netlify.app/
+👉 Live Demo: [https://regal-scone-14380e.netlify.app/](https://regal-scone-14380e.netlify.app/)
 
 ---
 
